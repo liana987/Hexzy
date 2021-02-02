@@ -21,7 +21,7 @@ A Modular Group management Bot on Sinhala
      - You can remove entry Daisy logo in Main.py.
      - Link your Credit card to Heroku for get extra amount of dynos.
      
-*I am just a learner and this is the code I used as MissDaisyRobot
+*I am just a learner and this is the code I used as HexzyRobot
 ```
 <details>
 <summary>-THE HARD WAY of deploying -</summary>
