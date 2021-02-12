@@ -51,20 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-
-I am a Powerful group management bot 🙂  🤿 \nCreated by [My master](https://t.me/Prabha_sha) 
-Based on Project Hexzy written by [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](https://t.me/Prabha_sha) 🤩
-You can find my list of available commands with /help.
-Start Me By /start
-
-©2021 [★彡ᵖⓡ𝓪Ｂ卄𝒶𝐒𝒽ค彡★](t.me/Prabha_sha) Bot All Rights Reserved
+Hi {}, my name is {}!
+Send me /help for more info
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm Most Powerfull & I help admins to manage their groups! Have a look at the following for an idea of some of \
-the things I can help you with. 🤿
+I'm Most Powerfull & I help admins to manage their groups!
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -81,7 +74,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/23c40c8b88da2370e9743.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/b801207a176b5c76f6f27.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -204,24 +197,24 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                             text=" 🚑 Support Group ",
-                             url="https://t.me/Gangofmafiateam"),
+                             text="  Support Group ",
+                             url="https://t.me/MizoInFoTel1"),
                          InlineKeyboardButton(
-                             text=" 🦠 Update Channel ",
-                             url="https://t.me/Mafia_Update")
+                             text="  Support Channel ",
+                             url="https://t.me/MizoInFoTel14")
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⛑ Help ",
-                            url="https://t.me/HexzyRobot?start=help"),
+                            text="  Help ",
+                            url="https://t.me/MizoInFoTel_bot?start=help"),
                          InlineKeyboardButton(
-                            text=" ⚡️ Developer ",
-                             url="https://t.me/Prabha_sha")        
+                            text="  Developer ",
+                             url="https://t.me/ZauteKm")        
                        
                      ], 
                      [
                         InlineKeyboardButton(
-                            text=" ➕ Add Hexzy to Your Group 🎨",
+                            text=" ➕ Add me to Your Group ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                     
