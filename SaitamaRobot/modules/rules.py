@@ -49,7 +49,7 @@ def send_rules(update, chat_id, from_pm=False):
             "This probably doesn't mean it's lawless though...!")
     elif rules:
         update.effective_message.reply_text(
-            "Please click the button below to see the rules.",
+            "Khawngaihin a hnuaia Button hi hmet la, Rules chhiar ta che.",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                     text="Rules", url=f"t.me/{bot.username}?start={chat_id}")
