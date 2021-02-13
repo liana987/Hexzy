@@ -67,9 +67,8 @@ I'm Most Powerfull & I help admins to manage their groups!
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
 
-
 {}
-And the following:
+And the following: @MizoInFoTel14
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
@@ -205,8 +204,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                         InlineKeyboardButton(
-                            text="  Help ",
-                            url="https://t.me/MizoInFoTel_bot?start=help"),
+                            text="  Youtube Channel ",
+                            url="https://youtube.com/channel/UC-rDf7LGhEkPl35fpJHX6dg"),
                          InlineKeyboardButton(
                             text="  Developer ",
                              url="https://t.me/ZauteKm")        
@@ -494,7 +493,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1684438752 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
