@@ -75,10 +75,7 @@ And the following: @MizoInFoTel14
 
 SAITAMA_IMG = "https://telegra.ph/file/b801207a176b5c76f6f27.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him on [Telegram](t.me/Prabha_sha)  or  [PayPal](paypal.me/PrabhashaPiumantha)."""
+DONATE_STRING = """Join [Telegram Channel](t.me/MizoInFoTel14)  &  [Telegram Group](t.me/MizoInFoTel1)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -220,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "Hi! Online turin ka inpeih e!\n<b>Haven't slept since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -319,7 +316,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"Private ah min be rawh pui tur che a Min duh chuan {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="Help",
