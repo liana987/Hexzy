@@ -309,18 +309,18 @@ def clearall_btn(update: Update, context: CallbackContext):
                 return
 
         if member.status == "administrator":
-            query.answer("Only owner of the chat can do this.")
+            query.answer("Group siamtu chauhvin a ti thei.")
 
         if member.status == "member":
-            query.answer("You need to be admin to do this.")
+            query.answer("Admin i nih a ngai.")
     elif query.data == 'notes_cancel':
         if member.status == "creator" or query.from_user.id in DRAGONS:
             message.edit_text("Clearing of all notes has been cancelled.")
             return
         if member.status == "administrator":
-            query.answer("Only owner of the chat can do this.")
+            query.answer("Group Siamtu chauhvin a ti thei.")
         if member.status == "member":
-            query.answer("You need to be admin to do this.")
+            query.answer("Admin i nih a ngai.")
 
 
 @run_async
@@ -329,7 +329,7 @@ def list_notes(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     note_list = sql.get_all_chat_notes(chat_id)
     notes = len(note_list) + 1
-    msg = "Get note by `/notenumber` or `#notename` \n\n  *ID*    *Note* \n"
+    msg = "I Koh chhuah dan tur chu `/notenumber` emaw `#notename` \n\n  *ID*    *Note* \n"
     for note_id, note in zip(range(1, notes), note_list):
         if note_id < 10:
             note_name = f"`{note_id:2}.`  `#{(note.name.lower())}`\n"
@@ -343,10 +343,10 @@ def list_notes(update: Update, context: CallbackContext):
 
     if not note_list:
         try:
-            update.effective_message.reply_text("No notes in this chat!")
+            update.effective_message.reply_text("He Group ah notes dah a ni lo!")
         except BadRequest:
             update.effective_message.reply_text(
-                "No notes in this chat!", quote=False)
+                "He Group ah notes dah a ni lo!", quote=False)
 
     elif len(msg) != 0:
         update.effective_message.reply_text(msg, parse_mode=ParseMode.MARKDOWN)
