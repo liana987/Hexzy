@@ -142,12 +142,12 @@ def get_id(update: Update, context: CallbackContext):
 
         if chat.type == "private":
             msg.reply_text(
-                f"Your id is <code>{chat.id}</code>.",
+                f"Nangma ID chu <code>{chat.id}</code>.",
                 parse_mode=ParseMode.HTML)
 
         else:
             msg.reply_text(
-                f"This group's id is <code>{chat.id}</code>.",
+                f"Hě Group ID chu <code>{chat.id}</code>.",
                 parse_mode=ParseMode.HTML)
 
 
@@ -262,7 +262,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @MizoInFoTel14"
         else:
             pass
     except:
@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/OnePunchUpdates/155">?</a>]'.format(
+        text += ' [<a href="https://t.me/MizoInFoTel14">?</a>]'.format(
             bot.username)
 
     try:
