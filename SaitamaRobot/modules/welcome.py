@@ -363,10 +363,10 @@ def new_member(update: Update, context: CallbackContext):
                         })
                     new_join_mem = f'<a href="tg://user?id={user.id}">{html.escape(new_mem.first_name)}</a>'
                     message = msg.reply_text(
-                        f"{new_join_mem}, click the button below to prove you're human.\nYou have 120 seconds.",
+                        f"{new_join_mem}, He Group-a awm i duh tak tak chuan a hnuaia Button hi hmet Rawh!.\nSeconds 120 chhûng hun i nei.",
                         reply_markup=InlineKeyboardMarkup([{
                             InlineKeyboardButton(
-                                text="Yes, I'm human.",
+                                text="Awle! Ka awm duh e.",
                                 callback_data=f"user_join_({new_mem.id})",
                             )
                         }]),
@@ -681,7 +681,7 @@ def set_welcome(update: Update, context: CallbackContext) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content, text, data_type, buttons)
-    msg.reply_text("Successfully set custom welcome message!")
+    msg.reply_text("Welcome Messages i siam dik thlap e!")
 
     return (f"<b>{html.escape(chat.title)}:</b>\n"
             f"#SET_WELCOME\n"
