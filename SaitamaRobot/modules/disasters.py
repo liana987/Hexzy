@@ -617,7 +617,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Hero Association Members ⚡️:</b>\n"
+    reply = "<b>Mizo InFoTel Support ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -716,7 +716,7 @@ Group admins/group owners do not need these commands.
  ╠  /ungban  *:* Ungbans the user, same usage as gban
  ╚  /gbanlist  *:* Outputs a list of gbanned users
 
-Visit @{SUPPORT_CHAT} for more information.
+Visit @MizoInFoTel14 for more information.
 """
 
 DEV_HANDLER = CommandHandler(("addpiro", "addsudo"), addpiro)
