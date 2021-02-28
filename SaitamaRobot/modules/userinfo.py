@@ -460,7 +460,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Heroes Association to set my bio.")
+                "Erm... yeah, I only trust Mizo InFoTel Support to set my bio.")
             return
 
         text = message.text
@@ -516,7 +516,7 @@ Examples:
  •  /info  *:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [Gang Of Mafia](https://t.me/Gangofmafiateam)
+ Come and see [Mizo InFoTel Support](https://t.me/MizoInFoTel1)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
