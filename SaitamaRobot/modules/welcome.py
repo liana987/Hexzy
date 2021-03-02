@@ -177,11 +177,11 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oh, Genos? Let's get this moving.",
+                    "Awi hah! Min siamtu alo join ve. Hlim takin i awm tlâng ang u☺.",
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"Bot Owner just joined the chat")
+                               f"Min siamtu hi He Group ah alo tel ve e. Kan lo lâwm a che Ka Pu!")
                 continue
 
             # Welcome Devs
@@ -363,10 +363,10 @@ def new_member(update: Update, context: CallbackContext):
                         })
                     new_join_mem = f'<a href="tg://user?id={user.id}">{html.escape(new_mem.first_name)}</a>'
                     message = msg.reply_text(
-                        f"{new_join_mem}, click the button below to prove you're human.\nYou have 120 seconds.",
+                        f"{new_join_mem}, He Group-a awm i duh tak tak chuan a hnuaia Button hi hmet Rawh!.\nMinutes 3 chhûng hun i nei.",
                         reply_markup=InlineKeyboardMarkup([{
                             InlineKeyboardButton(
-                                text="Yes, I'm human.",
+                                text="Aw le! Ka awm duh e.",
                                 callback_data=f"user_join_({new_mem.id})",
                             )
                         }]),
@@ -439,7 +439,7 @@ def check_not_bot(member, chat_id, message_id, context):
 
         try:
             bot.edit_message_text(
-                "*kicks user*\nThey can always rejoin and try.",
+                "*Ka Removed leh mai che*\nMahse, i rawn join leh thei ang. Chuan Button hi i hmet tawh dawnnia.",
                 chat_id=chat_id,
                 message_id=message_id,
             )
